@@ -1,0 +1,82 @@
+body{
+  background-color: #EFEFEF;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.5) 50%, rgba(0,0,0,0) 50%), 
+    linear-gradient(to bottom, rgba(255,255,255,0.5) 50%, rgba(0,0,0,0) 50%),
+    linear-gradient(to bottom, #FFF 50%, #BEBEBE 50%, #BEBEBE);
+  background-blend-mode: overlay;
+  background-size: 20px 20px;
+}
+
+canvas{
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+}
+
+.board{
+  float: left;
+  margin-right: 50px;
+  z-index: 1;
+  position: relative;
+  background-color: white;
+}
+
+.picker{
+  float: right;
+  margin-right: 100px;
+  margin-right: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3),
+              0px 6px 10px rgba(0, 0, 0, 0.2),
+              0px 12px 16px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  
+  float: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  top: 120px; 
+}
+
+#my_picker {
+  display: flex;
+  float: right;
+}
+
+.selected{
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  display: flex;
+  float: right;
+  z-index: 1; 
+}
+
+.data{
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3),
+              0px 6px 10px rgba(0, 0, 0, 0.2),
+              0px 12px 16px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  
+  width: 50px;
+  height: 50px;
+  margin-right: 100px;
+
+  float: right;
+  cursor: pointer;
+  z-index: 1;
+}

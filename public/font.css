@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Arial';
+  src: local('Arial') format('truetype');
+}
+
+@font-face {
+  font-family: "ArianaVioleta";
+  src: url("font/ArianaVioleta.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Conquest";
+  src: url("font/Conquest.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Debrosee";
+  src: url("font/Debrosee.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Freedom";
+  src: url("font/Freedom.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "WinterSong";
+  src: url("font/WinterSong.ttf") format('truetype');
+}
+
+    

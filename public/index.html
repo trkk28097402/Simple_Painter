@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> </title>
+    <link rel="stylesheet" type="text/css" href="painter.css"> 
+    <link rel="stylesheet" href="font.css"> 
+
+</head>
+<body id="content">
+  
+  <div>
+    <canvas class="board" id="my_canvas" width="900px" height="600px" > </canvas>
+    <canvas class="picker" id="my_picker" width="255px" height="180px" > </canvas>
+    <div class="rgbs">
+      <br>
+      R: 0 <input id="my_r" type="range" min="0" max="255" value="0"> 255
+      <br>
+      G: 0 <input id="my_g" type="range" min="0" max="255" value="0"> 255 
+      <br>
+      B: 0 <input id="my_b" type="range" min="0" max="255" value="0"> 255  
+      <br>
+    </div>
+    <div>
+      <br>
+      <label for="fontSelect">選擇字型：</label>
+      <select id="fontSelect">
+        <option value="Arial">Arial </option>
+        <option value="ArianaVioleta">ArianaVioleta </option>
+        <option value="Conquest">Conquest </option>
+        <option value="Debrosee">Debrosee </option>
+        <option value="Freedom">Freedom </option>
+        <option value="WinterSong">WinterSong </option>
+      </select>
+      <br></br>
+      <label for="line_width">筆刷 / 字體大小：</label>
+      <input id="line_width" type="number" value="5"> 
+    </div>
+
+    <div id="my_tool">
+      <div id="draw_tool">
+        <button class="button" id="text" style="background-image:url(img/text.png)"> </button>
+        <button class="button" id="square" style="background-image:url(img/square.png)"> </button>
+        <button class="button" id="circle" style="background-image:url(img/circle.png)"> </button>
+        <button class="button" id="triangle" style="background-image:url(img/triangle.png)"> </button>  
+      </div>
+      <div>
+        <input type="file" id="imageinput" style="display: none;">
+        <img class="data" id="upload" src="img/upload.png">
+        <img class="data" id="download" src="img/download.jpg">
+      </div>
+      <br></br>
+      <div id="state_tool">
+        <button class="button" id="undo" style="background-image:url(img/undo.jpg)" onclick="undo()"> </button>
+        <button class="button" id="redo" style="background-image:url(img/redo.jpg)" onclick="redo()"> </button>
+      </div>
+        <button class="button" id="stroke" style="background-image:url(img/stroke.jpg)"> </button>
+        <button class="button" id="fill" style="background-image:url(img/fill.png)"> </button>
+        <button class="button" id="pick" style="background-image:url(img/pick.png)"> </button>
+      <div>
+        <button class="button" id="clear" style="background-image:url(img/clear.jpg)"> </button>
+        <button class="button" id="draw" style="background-image:url(img/draw.png)"> </button>
+        <button class="button" id="erase" style="background-image:url(img/erase.png)"> </button>
+      </div>
+
+    </div>
+    <input type="text" id="inputtext" style="display: none;">
+    <div class="selected"> </div>
+
+  </div>
+
+  <script src="painter.js"></script>
+  
+</body>
+</html>
